@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Exempted IP addresses
+RewriteCond %{REMOTE_ADDR} !^{your_ip}
+RewriteCond %{REMOTE_ADDR} !^192\.168\..*$
+RewriteCond %{REMOTE_ADDR} !^127\.*\..*$
+RewriteCond %{REMOTE_ADDR} !^172\.*\..*$
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.(css|js|jpg|jpeg|png|gif)$
+
+RewriteCond %{REQUEST_URI} !/maintenance.html
+RewriteRule ^(.*)$ /maintenance.html [R=302,L]
+
+</IfModule>

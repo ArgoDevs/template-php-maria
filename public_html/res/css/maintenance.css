@@ -1,0 +1,101 @@
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background image */
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Lexend', sans-serif; /* Use Lexend font for all text */
+    color: #fff; /* Set text color to white */
+}
+
+/* Center and style the content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+header {
+   /* background-color: rgba(0, 0, 0, 0.5); Add a semi-transparent background for readability */
+    padding: 20px;
+}
+
+section {
+    margin: 14vw;
+	margin-top:18vh;
+    background-color: rgba(0, 11, 72, 0.6); /* Add a semi-transparent background for readability */
+    
+    border-radius: 10px;
+}
+/* Style the footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background color */
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Add space between text and icons */
+    color: #fff;
+
+}
+
+/* Style the social icons in the footer */
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.border-icon {
+	padding-right:8vw;
+}
+i.fab {
+    font-size: 24px; /* Adjust the size as needed */
+    margin: 10px; /* Add some spacing between icons and text */
+    color: #fff; /* Set the color to white */
+}
+a {
+    color: #fff; /* Set the color of the <a> elements to white */
+    font-weight: 700; /* Use Lexend Bold for these links */
+}
+
+@media (orientation: portrait) {
+    /* Add styles specific to portrait mode footer */
+   footer {
+   background-color: rgba(0, 0, 0, 0.0);
+}
+	section {
+	   padding-top: 80px;
+
+	}
+	footer p {
+        display: none;
+    	
+    }
+    .social-icons {
+        position:absolute;
+    	left: 45vw;
+    	bottom:3vh;
+    
+    } 
+}
