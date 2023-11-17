@@ -1,8 +1,6 @@
 # template-php-maria
 Template per sviluppo siti ready to cook by argo devs
 
-# ns-3k
-Repo di sviluppo per il sito ns3000
 
 # Setup Docker
 Installare Docker e seguire i passaggi per utilizzarlo anche non da root: [Docker non root](https://docs.docker.com/engine/install/linux-postinstall/).\
